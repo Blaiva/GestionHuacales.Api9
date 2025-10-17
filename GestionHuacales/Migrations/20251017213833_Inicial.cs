@@ -20,7 +20,7 @@ namespace GestionHuacales.Migrations
                     IdEntrada = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     Fecha = table.Column<DateTime>(type: "TEXT", nullable: false),
-                    NombreCliente = table.Column<string>(type: "TEXT", maxLength: 50, nullable: false),
+                    NombreCliente = table.Column<string>(type: "TEXT", maxLength: 50, nullable: true),
                     Cantidad = table.Column<int>(type: "INTEGER", nullable: false),
                     Importe = table.Column<double>(type: "REAL", nullable: false)
                 },

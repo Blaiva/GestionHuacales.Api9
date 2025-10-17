@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GestionHuacales.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20251014003038_Inicial")]
+    [Migration("20251017213833_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -36,7 +36,6 @@ namespace GestionHuacales.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("NombreCliente")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 

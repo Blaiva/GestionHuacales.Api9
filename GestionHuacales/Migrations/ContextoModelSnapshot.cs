@@ -33,7 +33,6 @@ namespace GestionHuacales.Migrations
                         .HasColumnType("REAL");
 
                     b.Property<string>("NombreCliente")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("TEXT");
 
